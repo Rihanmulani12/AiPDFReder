@@ -71,7 +71,7 @@ export const Navbar = () => {
         </svg>
       </div>
 
-      {<Upload />}
+      {<Upload/>}
     </div>
   );
 };

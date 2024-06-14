@@ -1,15 +1,22 @@
 import React, { useState } from "react";
+import UploadedPdf from "./UploadedPdf.jsx";
+
+
 
 const Upload = () => {
   const [file, setFile] = useState(null);
+  const [fileName, setFileName] = useState("");
 
   const handleFileChange = (event) => {
-    setFile(event.target.files[0]);
+    const selectedFile = event.target.files[0];
+
+    if (selectedFile) {
+      setFile(selectedFile);
+      setFileName(selectedFile.name);
+    }
   };
-  console.log(file)
 
   const handleUpload = async () => {
-    console.log("hii thre")
     if (!file) {
       alert("Please select a file first");
       return;
@@ -26,6 +33,9 @@ const Upload = () => {
 
       if (response.ok) {
         alert("File uploaded successfully");
+        // Optionally, you can clear the file state after successful upload
+        setFile(null);
+        setFileName("");
       } else {
         alert("Failed to upload file");
       }
@@ -37,8 +47,10 @@ const Upload = () => {
 
   return (
      <div className="flex items-center justify-center">
-
+      {fileName && <UploadedPdf filename={fileName} />}
         <label htmlFor="uploadFile1" className="cursor-pointer">
+        
+      
         <svg
           width="181"
           height="39"
@@ -97,9 +109,13 @@ const Upload = () => {
         type="file"
         id="uploadFile1"
         className="hidden"
+        style={{ display: "none" }}
         onChange={handleFileChange}
+        accept="application/pdf"
+      
       />
        <button onClick={handleUpload} className="ml-4 px-4 py-2 bg-slate-800 text-zinc-50 rounded-md">Send</button>
+       
      
 
     </div>
