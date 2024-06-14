@@ -1,0 +1,42 @@
+.navbar {
+    width: 1150px;
+    height: 70px;
+    background-color: #f2eaea;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+
+
+}
+
+.vector {
+    position: absolute;
+    width: 65.95px;
+    height: 21px;
+    top: 32px;
+    left: 60px;
+
+}
+
+.formaly {
+
+
+    position: absolute;
+    left: 75px;
+    right: 15px;
+    top: 55px;
+    bottom: 10px;
+
+}
+
+.dphi {
+    position: absolute;
+    left: 110px;
+    top: 55px;
+    bottom: 10px;
+
+
+}

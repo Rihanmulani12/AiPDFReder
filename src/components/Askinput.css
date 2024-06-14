@@ -1,0 +1,138 @@
+.input-box {
+    position: absolute;
+    width: 1000px;
+    height: 56px;
+    left: 112px;
+    top: 749px;
+
+
+}
+
+
+.input-box {
+    width: 100%;
+}
+
+.input-field {
+    flex: 1;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.send-button {
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+.send-icon {
+    position: absolute;
+    right: 30px; /* Adjust the right position as needed */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+    width: 22px;
+    height: 22px;
+  }
+
+
+  .response-box {
+    margin-top: 20px;
+    margin-left: 50px;
+    padding: 15px; /* Increased padding for better spacing */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #f0f0f0; /* Light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  }
+  
+  .response {
+    margin-top: 10px; /* Space between response box and content */
+    font-size: 16px; /* Font size for the response text */
+    line-height: 1.4; /* Line height for improved readability */
+  }
+  
+  .response p {
+    margin: 0; /* Remove default margin */
+    color: #333; /* Text color */
+  }
+  
+  .response.from-bot {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .response.from-bot .avatar {
+    width: 40px; /* Size of the avatar */
+    height: 40px;
+    border-radius: 50%; /* Rounded avatar */
+    margin-right: 10px; /* Spacing between avatar and text */
+  }
+  
+  .response.from-bot .text {
+    background-color: #e0e0e0; /* Background color for bot responses */
+    padding: 10px; /* Padding for response text */
+    border-radius: 8px; /* Rounded corners for response box */
+    max-width: 70%; /* Limiting width for responsiveness */
+  }
+  
+  .response.from-user {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .response.from-user .text {
+    background-color: #007bff; /* Background color for user responses */
+    color: white; /* Text color for user responses */
+  }
+  
+  .response.from-user .text p {
+    color: white; /* Adjust text color within user response */
+  }
+  .question {
+    margin-bottom: 10px;
+  }
+  
+  .question p {
+    margin: 0;
+    font-weight: bold;
+  }
+
+
+  .response-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .question-box, .answer-box {
+    flex: 1;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .question-box {
+    margin-right: 10px; /* Adjust spacing between question and answer boxes */
+  }
+  
+  .answer-box {
+    margin-left: 10px; /* Adjust spacing between question and answer boxes */
+  }
+  
+  .question-box h3, .answer-box h3 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .question-box p, .answer-box p {
+    margin: 0;
+    color: #666;
+  }
