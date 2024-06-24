@@ -1,24 +1,49 @@
 .uploaded-pdf-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    margin-right: 10px;
-    border: 1px solid #ebe6e6;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(232, 229, 229, 0.1);
-    background-color: #f8f3f3; /* Grey background color */
-    padding: 5px;
-    width: 100px;
-    overflow: hidden; /* Prevents long filenames from overflowing */
-    text-overflow: ellipsis; /* Adds ellipsis (...) for long filenames */
-    white-space: nowrap; /* Ensures filename stays on one line */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin-right: 10px;
+  border: 1px solid #ebe6e6;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(232, 229, 229, 0.1);
+  background-color: #f8f3f3; 
+  padding: 5px;
+  width: 100px;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+}
+
+.uploaded-pdf-content {
+  text-align: center;
+  font-size: 10px;
+  margin: 0;
+  color: #0FA958;
+}
+
+
+@media (max-width: 768px) {
+  .uploaded-pdf-container {
+      width: 80px; 
+      height: auto; 
+      margin-right: 5px; 
+      padding: 3px; 
   }
-  
+
   .uploaded-pdf-content {
-    text-align: center;
-    font-size: 10px;
-    margin: 0;
-    color: #0FA958 
+      font-size: 9px; 
   }
-  
+}
+
+@media (max-width: 480px) {
+  .uploaded-pdf-container {
+      width: 60px; 
+      margin-right: 3px; 
+      padding: 2px; 
+  }
+
+  .uploaded-pdf-content {
+      font-size: 8px; 
+  }
+}

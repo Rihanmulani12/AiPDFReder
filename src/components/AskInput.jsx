@@ -25,7 +25,7 @@ function AskInput() {
   };
 
   return (
-    <div className=" flex ask-input-container">
+    <div className="flex ask-input-container">
       <form
         onSubmit={handleSubmit}
         className="input-box flex items-center md:w-4/5"

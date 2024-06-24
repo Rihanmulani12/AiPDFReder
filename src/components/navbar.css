@@ -1,15 +1,14 @@
 .navbar {
-    width: 1165px;
+    max-width: 1170px;
     height: 70px;
     background-color: #f2eaea;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-
-
-
+    padding: 20px;
+    
+    
 }
 
 .vector {
@@ -18,18 +17,14 @@
     height: 21px;
     top: 32px;
     left: 60px;
-
 }
 
 .formaly {
-
-
     position: absolute;
     left: 75px;
     right: 15px;
     top: 55px;
     bottom: 10px;
-
 }
 
 .dphi {
@@ -37,6 +32,54 @@
     left: 110px;
     top: 55px;
     bottom: 10px;
+}
 
 
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+        height: auto; 
+        padding: 10px;
+    }
+
+    .vector {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 10px 0; 
+    }
+
+    .formaly {
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: 10px 0; 
+        text-align: center; 
+    }
+
+    .dphi {
+        position: relative;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: 10px 0; 
+        text-align: center; 
+    }
+}
+
+@media (max-width: 480px) {
+    .vector {
+        width: 50px; 
+        height: auto;
+    }
+
+    .formaly {
+        font-size: 14px; 
+    }
+
+    .dphi {
+        font-size: 14px; 
+    }
 }
